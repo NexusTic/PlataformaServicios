@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus TIC - Soluciones Digitales, Cursos y Streaming</title>
+    <!-- Google Fonts & FontAwesome para iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --whatsapp: #25d366;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--dark), #1e293b);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .btn-main {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+
+        .btn-main:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+
+        .card i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        /* Botón flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp);
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera Principal -->
+    <header>
+        <h1>Nexus TIC - Soluciones Digitales</h1>
+        <p>Potencia tu aprendizaje y entretenimiento con nuestras plataformas de streaming, programas especializados y cursos profesionales.</p>
+        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20más%20información%20sobre%20sus%20servicios" target="_blank" class="btn-main">
+            <i class="fab fa-whatsapp"></i> Contáctanos al Instante
+        </a>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <div class="container">
+        <h2 class="section-title">Nuestros Servicios y Productos</h2>
+        <div class="grid">
+            
+            <!-- Tarjeta 1: Streaming -->
+            <div class="card">
+                <i class="fas fa-tv"></i>
+                <h3>Plataformas de Streaming</h3>
+                <p>Disfruta de tus series, películas y contenidos favoritos en alta definición con cuentas estables y garantizadas al mejor precio.</p>
+                <a href="https://wa.me/51977732655?text=Hola,%20me%20interesan%20las%20plataformas%20de%20streaming" target="_blank" class="btn-main" style="background-color: var(--whatsapp);">Pedir Streaming</a>
+            </div>
+
+            <!-- Tarjeta 2: Cursos -->
+            <div class="card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Cursos Especializados</h3>
+                <p>Aprende desarrollo de software, bases de datos y herramientas tecnológicas de alta demanda con metodologías prácticas desde cero.</p>
+                <a href="https://wa.me/51977732655?text=Hola,%20deseo%20información%20sobre%20los%20cursos%20disponibles" target="_blank" class="btn-main">Ver Cursos</a>
+            </div>
+
+            <!-- Tarjeta 3: Venta de Programas -->
+            <div class="card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Venta de Programas</h3>
+                <p>Software administrativo, sistemas de facturación electrónica y herramientas a medida para optimizar los procesos de tu negocio.</p>
+                <a href="https://wa.me/51977732655?text=Hola,%20necesito%20cotizar%20un%20programa%20o%20sistema" target="_blank" class="btn-main">Cotizar Programa</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/51977732655?text=Hola,%20vengo%20de%20su%20web%20y%20quiero%20más%20información" class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Nexus TIC. Todos los derechos reservados. Desarrollado para impulsar tu crecimiento digital.</p>
+    </footer>
+
+</body>
+</html>
