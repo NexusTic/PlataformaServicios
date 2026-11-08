@@ -223,4 +223,473 @@
             padding: 2rem;
         }
 
-        .service-
+        .service-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .service-content p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Sección Misión y Visión */
+        .mv-section {
+            background-color: #ffffff;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .mv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .mv-card {
+            background: var(--light);
+            border-radius: 16px;
+            padding: 2.5rem;
+            border: 1px solid var(--border);
+        }
+
+        .mv-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.2rem;
+        }
+
+        .mv-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .mv-card p {
+            color: var(--gray);
+            font-size: 0.98rem;
+            line-height: 1.7;
+        }
+
+        /* Sección Proceso Remoto */
+        .process-section {
+            background: linear-gradient(135deg, #1e293b, var(--dark));
+            color: white;
+            padding: 5rem 1.5rem;
+            text-align: center;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-step {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .step-num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #38bdf8;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Botón Flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp);
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: #94a3b8;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        ⚡ <span>Servicio Remoto de Instalación</span> de programas adquiridos | Sin Inicio de Sesión | Contacto: +51 977732655
+    </div>
+
+    <!-- Header Principal -->
+    <header>
+        <h1>NEXUS TIC</h1>
+        <p>Soluciones tecnológicas integrales, software especializado, hardware y capacitación profesional a tu alcance.</p>
+        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20consultar%20sobre%20sus%20servicios%20de%20software%20y%20hardware" target="_blank" class="btn-whatsapp">
+            <i class="fab fa-whatsapp" style="font-size: 1.4rem;"></i> WhatsApp: +51 977732655
+        </a>
+    </header>
+
+    <!-- Catálogo de Software -->
+    <div class="container">
+        <h2 class="section-title">Catálogo de Software y Licencias</h2>
+        <p class="section-subtitle">Instalación remota directa sin complicaciones ni inicios de sesión exigidos.</p>
+
+        <div class="software-grid">
+            
+            <!-- Item 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=600&q=80" alt="Adobe After Effects" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Diseño y Edición</span>
+                        <div class="product-title">Adobe After Effects</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 20.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Adobe%20After%20Effects%20(S/%2020.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80" alt="Corel DRAW" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Diseño Vectorial</span>
+                        <div class="product-title">Corel DRAW</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 20.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Corel%20DRAW%20(S/%2020.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Canva Pro Edu" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Diseño Web</span>
+                        <div class="product-title">Canva Pro Edu</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 15.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Canva%20Pro%20Edu%20(S/%2015.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Project 2019" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Gestión de Proyectos</span>
+                        <div class="product-title">Microsoft Project 2019</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 10.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Project%202019%20(S/%2010.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=600&q=80" alt="Project 2021" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Gestión de Proyectos</span>
+                        <div class="product-title">Microsoft Project 2021</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 15.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Project%202021%20(S/%2015.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80" alt="Project 2024" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Gestión de Proyectos</span>
+                        <div class="product-title">Microsoft Project 2024</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 20.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Project%202024%20(S/%2020.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Eset Antivirus" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Seguridad Digital</span>
+                        <div class="product-title">Eset Antivirus</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 30.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Eset%20Antivirus%20(S/%2030.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80" alt="Avast Premium" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Seguridad Digital</span>
+                        <div class="product-title">Avast Premium</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 25.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Avast%20Premium%20(S/%2025.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542744094-3a31216994ef?auto=format&fit=crop&w=600&q=80" alt="Visio 2019" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Diagramación</span>
+                        <div class="product-title">Microsoft Visio 2019</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 10.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Visio%202019%20(S/%2010.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" alt="Visio 2021" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Diagramación</span>
+                        <div class="product-title">Microsoft Visio 2021</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 15.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Visio%202021%20(S/%2015.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Visio 2024" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Diagramación</span>
+                        <div class="product-title">Microsoft Visio 2024</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 20.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Visio%202024%20(S/%2020.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=600&q=80" alt="Camtasia Studio" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Edición de Video</span>
+                        <div class="product-title">Camtasia Studio</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 15.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Camtasia%20Studio%20(S/%2015.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 13 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1574717024453-354056afd6fc?auto=format&fit=crop&w=600&q=80" alt="Wondershare Filmora" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <span class="product-badge">Edición de Video</span>
+                        <div class="product-title">Wondershare Filmora</div>
+                    </div>
+                    <div>
+                        <div class="product-price">S/ 15.00</div>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20adquirir%20Filmora%20(S/%2015.00)" target="_blank" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> Adquirir
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Servicios Adicionales (Hardware y Equipos) -->
+    <div style="background-color: #ffffff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+        <div class="container">
+            <h2 class="section-title">Servicios de Hardware y Computación</h2>
+            <p class="section-subtitle">Venta de equipos e infraestructura para potenciar tu espacio personal o empresarial.</p>
+            
+            <div class="services-grid">
+                
+                <!-- Servicio Hardware 1 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=800&q=80" alt="Venta de Computadoras y Laptops" class="service-img">
+                    <div class="service-content">
+                        <h3>Venta de Computadoras y Laptops</h3>
+                        <p>Equipos reacondicionados y nuevos para trabajo de oficina, arquitectura, edición de video y desarrollo de software.</p>
+                        <a href="https://wa.me/51977732655?text=Hola,%20necesito%20cotizar%20una%20computadora%20o%20laptop" target="_blank" class="btn-buy">Cotizar Equipo</a>
+                    </div>
+                </div>
+
+                <!-- Servicio Hardware 2 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80" alt="Servicio Técnico de Hardware" class="service-img">
+                    <div class="service-content">
+                        <h3>Servicio Técnico de Hardware</h3>
+                        <p>Mantenimiento preventivo/correctivo, diagnóstico de fallas físicas, limpieza interna y repotenciación de componentes.</p>
+                        <a href="https://wa.me/51977732655?text=Hola,%20necesito%20servicio%20técnico%20de%20hardware" target="_blank" class="btn-buy">Solicitar Técnico</a>
+                    </div>
+                </div>
+
+                <!-- Servicio Digital 3 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&w=800&q=80" alt="Plataformas de Streaming" class="service-img">
+                    <div class="service-content">
+                        <h3>Plataformas de Streaming</h3>
+                        <p>Cuentas digitales de entretenimiento estables y garantizadas para disfrutar de tus contenidos preferidos.</p>
+                        <a href="https://wa.me/51977732655?text=Hola,%20deseo%20información%20sobre%20cuentas%20de%20streaming" target="_blank" class="btn-buy">Ver Streaming</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Proceso de Atención Remota -->
+    <div class="process-section">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem; font-weight: 700;">Garantía de Servicio Remoto</h2>
+            <p style="color: #94a3b8; font-size: 1.05rem;">Instalamos y configuramos tu software de forma limpia sin pedir accesos de cuentas ni inicios de sesión.</p>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-num">01</div>
+                    <h4 style="margin-bottom: 0.5rem;">Contacto Directo</h4>
+                    <p style="font-size: 0.9rem; color: #cbd5e1;">Escríbenos al WhatsApp y confirma la versión del software que necesitas.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">02</div>
+                    <h4 style="margin-bottom: 0.5rem;">Asistencia Remota</h4>
+                    <p style="font-size: 0.9rem; color: #cbd5e1;">Coordinamos la conexión a tu equipo para realizar la instalación guiada.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">03</div>
+                    <h4 style="margin-bottom: 0.5rem;">Sin Inicios de Sesión</h4>
+                    <p style="font-size: 0.9rem; color: #cbd5e1;">Garantizamos la funcionalidad completa de tu programa de forma segura e inmediata.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Misión y Visión -->
+    <div class="mv-section">
+        <div class="container">
+            <h2 class="section-title">Sobre Nexus TIC</h2>
+            <p class="section-subtitle">Nuestro compromiso con la excelencia tecnológica y el crecimiento de tu negocio.</p>
+            
+            <div class="mv-grid">
+                
+                <div class="mv-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Nuestra Misión</h3>
+                    <p>Proveer soluciones tecnológicas integrales y software a medida que optimicen los procesos operativos de nuestros clientes, garantizando sistemas robustos, ágiles y accesibles que impulsen el crecimiento y la eficiencia de sus negocios.</p>
+                </div>
+
+                <div class="mv-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser un referente en el desarrollo de software y servicios informáticos, reconocidos por la confiabilidad de nuestras plataformas, la innovación constante en nuestras soluciones y el impacto directo en la transformación digital de las empresas.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/51977732655?text=Hola,%20vengo%20de%20su%20web%20Nexus%20TIC" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Nexus TIC - Soluciones Tecnológicas Integrales</strong></p>
+        <p>Atención directa por WhatsApp: <strong>+51 977732655</strong></p>
+        <p style="margin-top: 1.5rem; font-size: 0.8rem; color: #64748b;">&copy; 2026 Nexus TIC. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
